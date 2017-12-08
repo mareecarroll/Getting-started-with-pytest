@@ -12,6 +12,7 @@ type: MultipleChoiceExercise
 lang: python
 xp: 50
 skills: 1
+key: 3be3f53ed9
 ```
 
 Have a look at the plot that showed up in the viewer to the right. Which type of movies have the worst rating assigned to them?
@@ -56,6 +57,7 @@ type: NormalExercise
 lang: python
 xp: 100
 skills: 1
+key: d964244c0b
 ```
 
 Do you remember the plot of the last exercise? Let's make an even cooler plot!

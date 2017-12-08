@@ -1,11 +1,11 @@
 ---
-title       : Insert the chapter title here
-description : Insert the chapter description here
+title       : What is Unit Testing?
+description : Introduces some of the terminology and the importance of unit testing
 attachments :
-  slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
+ slides_link : 
 
 ---
-## A really bad movie
+## What is unit testing?
 
 ```yaml
 type: MultipleChoiceExercise
@@ -15,7 +15,18 @@ skills: 1
 key: 6436e1dabb
 ```
 
-Have a look at the plot that showed up in the viewer to the right. Which type of movies have the worst rating assigned to them?
+Unit testing involves checking that individual parts of functionality work as you expect.
+
+Unit testing gives you confidence that when you make a change, you didn't break anything.
+
+Unit tests are generally added all the time:
+- when you first write some new functionality
+- when you enhance that functionality
+- when you fix a bug
+
+For example, when you fix a bug it is important to ensure that unit tests are written that fail before you fix the bug, and pass after the fix. This gives you confidence you really did fix the bug and didn't introduce other problems while doing it.
+
+How much confidence you can have that changes keep everything ship shape depends on how good your unit tests are at testing for valid and invalid conditions and how your code handles each, as well as the percentage of code coverage the tests have.
 
 `@instructions`
 - Long movies, clearly
@@ -24,20 +35,15 @@ Have a look at the plot that showed up in the viewer to the right. Which type of
 - Short movies, but the correlation seems weak
 
 `@hint`
-Have a look at the plot. Do you see a trend in the dots?
+Once you install pytest, you can import it.
 
 `@pre_exercise_code`
 ```{python}
 # The pre exercise code runs code to initialize the user's workspace.
 # You can use it to load packages, initialize datasets and draw a plot in the viewer
 
-import pandas as pd
-import matplotlib.pyplot as plt
+import pytest
 
-movies = pd.read_csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv")
-
-plt.scatter(movies.runtime, movies.rating)
-plt.show()
 ```
 
 `@sct`

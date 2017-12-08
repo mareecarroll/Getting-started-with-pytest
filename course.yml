@@ -1,6 +1,6 @@
-title                : Getting started with pytest
-description          : This is an automatically generated demo course which will help you on your way to create an awesome DataCamp course.
-university           : DataCamp
+title                : Python Unit Testing
+description          : An introduction to unit testing python code
+university           : Bureau of Meteorology
 difficulty_level     : 2
 time_needed          : 1 hour
 programming_language : python
